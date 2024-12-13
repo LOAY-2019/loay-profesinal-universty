@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: #0077B6;
+            height: 100vh;
+        }
+        .all{
+            background-color: #00B4D8;
+            width: 350px;
+            height: 90vh;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            display: grid;
+            text-align: center;
+            grid-template-columns: auto;
+            gap: 30px;
+            border-radius: 20px;
+        }
+        a{
+            text-decoration: none;
+            border: black solid 2px;
+            font-size: 26px;
+            background-color: #90E0EF;
+            color: #343A40;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 4px 5px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <a href="/addStudent">Add a student</a>
+        <a href="/addCourse">Add a course</a>
+        <a href="/register">Register a student in a course</a>
+        <a href="/viewStudent">View student data</a>
+        <a href="/viewCorse">View Courses</a>
+        <a href="/show">Show students with courses</a>
+        <a href="/">exit</a>
+    </div>
+</body>
+</html>

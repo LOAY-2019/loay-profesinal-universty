@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: #0077B6;
+            height: 100vh;
+        }
+        h1{
+            position: relative;
+            left: 60px;
+            top: 50px;
+            color: #F94144;
+        }
+        .all{
+            background-color: #00B4D8;
+            width: 300px;
+            height: 450px;
+            position: relative;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+
+        }
+        form{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        label{
+            font-size: 20px;
+        }
+        input{
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        .sub{
+            margin-top: 20px;
+            position: relative;
+            left: -45px;
+            border-radius: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Add New Student</h1>
+    <div class="all">
+
+        <form action="/addStudent" method="post">
+            <label for="">name</label>
+            <input type="text" name="name" required>
+            
+            <label for="">number</label>
+            <input type="number" name="number" required>
+            
+            <label for="">field</label>
+            <input type="text" name="field" required>
+            
+            <label for="">age</label>
+            <input type="number" name="age" required>
+            
+            <label for="">heigt</label>
+            <input type="number" name="height" required>
+            
+            <label for="">nationality</label>
+            <input type="text" name="nationality" required>
+            <div></div>
+            <input type="submit" value="add" class="sub" required>
+    
+        </form>
+        <a href="/menu">back</a>
+    </div>
+</body>
+</html>

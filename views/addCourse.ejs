@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: #0077B6;
+            height: 100vh;
+        }
+        h1{
+            position: relative;
+            left: 60px;
+            top: 50px;
+            color: #F94144;
+        }
+        .all{
+            background-color: #00B4D8;
+            width: 300px;
+            height: 350px;
+            position: relative;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+        form{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        label{
+            font-size: 20px;
+        }
+        input{
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        .sub{
+            margin-top: 20px;
+            position: relative;
+            left: -45px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add New Course</h1>
+    <div class="all">
+
+        <form action="/addCourse" method="post">
+            <label for="">name</label>
+            <input type="text" name="name">
+            
+            <label for="">code</label>
+            <input type="number" name="code">
+            
+            <label for="">hours</label>
+            <input type="number" name="numberOfHours">
+            <div></div>
+            <input type="submit" value="add" class="sub">
+        </form>
+        <a href="/menu">back</a>
+    </div>
+</body>
+</html>
