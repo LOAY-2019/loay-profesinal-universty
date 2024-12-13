@@ -8,6 +8,7 @@ const moment = require("moment");
 const methodover = require("method-override");
 // const { render } = require("ejs");
 const session = require("express-session");
+const PORT = process.env.PORT || 3000;
 app.use(session({
     secret: "loay2019",
     resave: false,
@@ -165,7 +166,7 @@ app.post("/addCourse", async (req,res) =>{
 //     })
 // })
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log("welcome to loay wep site");
 })
 
